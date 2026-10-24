@@ -1,16 +1,17 @@
-
 # Stock & Financial Data Analysis
 
 A Python-based financial analysis project exploring historical stock market data using Pandas, NumPy, Matplotlib, and yfinance.
 
 ## Objectives
 
-- Retrieve historical stock price data
+- Retrieve historical stock market data
 - Calculate daily and cumulative returns
 - Measure annualized volatility
-- Calculate 50-day and 200-day moving averages
-- Analyze maximum drawdown
-- Visualize price movements and investment performance
+- Analyze 50-day and 200-day moving averages
+- Calculate maximum drawdown
+- Compare the performance and risk of multiple stocks
+- Examine correlations between stock returns
+- Visualize historical performance and hypothetical investment growth
 
 ## Technologies
 
@@ -28,6 +29,7 @@ stock-financial-analysis/
 ├── notebooks/
 │   └── stock_analysis.ipynb
 ├── data/
+│   └── .gitkeep
 ├── .gitignore
 ├── README.md
 └── requirements.txt
@@ -35,27 +37,73 @@ stock-financial-analysis/
 
 ## Getting Started
 
-1. Clone this repository.
-2. Create and activate a virtual environment.
-3. Install dependencies:
+### 1. Clone the repository
 
-   ```bash
-   pip install -r requirements.txt
-   ```
+```bash
+git clone <your-github-repository-url>
+cd stock-financial-analysis
+```
 
-4. Launch Jupyter:
+Replace the placeholder with your actual GitHub repository URL.
 
-   ```bash
-   python -m notebook
-   ```
+### 2. Create a virtual environment
 
-5. Open `notebooks/stock_analysis.ipynb` and run the cells.
+```bash
+python -m venv venv
+```
+
+Activate it on Windows PowerShell:
+
+```powershell
+.\venv\Scripts\Activate.ps1
+```
+
+### 3. Install dependencies
+
+```bash
+python -m pip install -r requirements.txt
+```
+
+### 4. Launch Jupyter Notebook
+
+```bash
+python -m notebook
+```
+
+Open `notebooks/stock_analysis.ipynb` and run the notebook cells.
+
+## Analysis Features
+
+- Historical stock price analysis
+- Daily and cumulative returns
+- Average daily returns and best/worst trading days
+- Annualized volatility
+- 50-day and 200-day moving averages
+- Maximum drawdown analysis
+- Multi-stock performance comparison
+- Sharpe ratio calculation
+- Stock return correlation matrix and heatmap
+- Hypothetical investment growth comparison
+
+## Results
+
+The Jupyter Notebook contains the analysis, charts, performance summary tables, and conclusions.
+
+Stocks analyzed include Apple (AAPL), Microsoft (MSFT), and NVIDIA (NVDA).
+
+## Limitations
+
+- Historical performance does not guarantee future results.
+- Results depend on the selected date range and data source.
+- Taxes, transaction costs, and other real-world trading frictions are not fully modeled.
+- The Sharpe ratio uses a simplified risk-free-rate assumption.
+- The analysis is educational and does not constitute investment advice.
 
 ## Current Status
 
-Version 1: Single-stock analysis of Apple (AAPL).
+**Version 1.0 — Core financial analysis completed.**
 
-Planned improvements include multi-stock comparison, risk-adjusted performance metrics, and improved visualizations.
+Future enhancements may include portfolio optimization, more robust risk metrics, and interactive visualizations.
 
 ## Disclaimer
 
